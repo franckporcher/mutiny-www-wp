@@ -25,7 +25,8 @@ define('DB_USER', 'mutiny_db_admin');
 define('DB_PASSWORD', 'AmantesIslaUnidos');
 
 /** MySQL hostname */
-define('DB_HOST', 'sql.mutinytahiti.com');
+//define('DB_HOST', 'sql.mutinytahiti.com');
+define('DB_HOST', array('environment' => getenv("DBSERVER")));
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
