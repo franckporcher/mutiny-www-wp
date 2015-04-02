@@ -16,17 +16,18 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'wpmutiny');
+define('DB_NAME', '###SQL_WPDB###');
 
 /** MySQL database username */
-define('DB_USER', 'mutiny_db_admin');
+define('DB_USER', '###SQL_DBADMIN###');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'AmantesIslaUnidos');
+define('DB_PASSWORD', '###SQL_DBADMIN_PWD###');
 
 /** MySQL hostname */
 //define('DB_HOST', 'sql.mutinytahiti.com');
-define('DB_HOST', array('environment' => getenv("DBSERVER")));
+//define('DB_HOST', array('environment' => getenv("DBSERVER")));
+define('DB_HOST', '###SQL_DBSERVER###');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -53,8 +54,8 @@ define('LOGGED_IN_SALT',    'VicmiJq=EF~=meN,nv +xe8QM+KaE@R$]c%t{k)(&L*@U9k+bZx
 define('NONCE_SALT',        'a]R|b,D+wc ?T;c@s>3,eoiv5v]2Q9%bw3k|^6K`_*O0g[mc7PK,L52w&+XoLB?%');
 
 /**#@-*/
-define('WP_SITEURL',        'http://mutinytahiti.com' );
-define('COOKIE_DOMAIN',     'mutinytahiti.com' );
+define('WP_SITEURL',        'http://###VHOST_SERVER_NAME###' );
+define('COOKIE_DOMAIN',     '###VHOST_SERVER_NAME###' );
 define('FORCE_SSL_ADMIN',   true);
 define('AUTH_KEY',          'V-V-qc4p{/$qUjh7(JC~q>;SR-e})|lJIEQT!/d2,^2c;pNa=9_!mw]m-=XlYedc');
 define('SECURE_AUTH_KEY',   'D?$0$+2aZZ5-!Hz?Cw#6}cP~.KTm}+t~0A9+7.}y37^%{9X:#}l1&w/%&r~_-*c~');
