@@ -1,1 +1,5 @@
-update-submodule.sh
+.wordpress.config
+.wordpress.install
+.wordpress.midinstall
+.wordpress.postinstall
+.wordpress.submodules
